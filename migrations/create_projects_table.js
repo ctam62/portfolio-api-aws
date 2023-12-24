@@ -13,6 +13,8 @@ exports.up = function (knex) {
         table.specificType('tech', 'text ARRAY').notNullable();
         table.string('github').nullable();
         table.specificType('images', 'text ARRAY').notNullable();
+        table.timestamp('created_at').defaultTo(knex.fn.now());
+        table.timestamp('updated_at').defaultTo(knex.fn.now());
     });
 };
 
