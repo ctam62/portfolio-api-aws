@@ -3,10 +3,7 @@ const projectController = require("../controllers/project-controller");
 
 router
     .route('/')
-    .get(projectController.getAllProjects);
-
-router
-    .route('/:title')
-    .get(projectController.getProjectByTitle);
+    .get(projectController.getAllProjects)
+    .put(projectController.getProjectByTitle);
 
 module.exports = router;
