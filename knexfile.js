@@ -1,16 +1,16 @@
 require("dotenv").config();
 
 module.exports = {
-    client: 'pg',
-    connection: {
-        host: process.env.DB_HOST,
-        database: process.env.DB_NAME,
-        user: process.env.DB_USER,
-        password: process.env.DB_PASSWORD,
-        charset: 'utf8',
-    },
+  client: 'pg',
+  connection: {
+    host: process.env.POSTGRES_HOST,
+    database: process.env.POSTGRES_DATABASE,
+    user: process.env.POSTGRES_USER,
+    password: process.env.POSTGRES_PASSWORD,
+    charset: 'utf8',
+  },
 
-    onUpdateTimestampFunction: `
+  onUpdateTimestampFunction: `
     CREATE OR REPLACE FUNCTION on_update_timestamp()
     RETURNS trigger AS $$
     BEGIN
@@ -20,7 +20,7 @@ module.exports = {
     $$ language 'plpgsql';
   `,
 
-    onUpdateTrigger: table => `
+  onUpdateTrigger: table => `
     CREATE TRIGGER ${table}_updated_at
     BEFORE UPDATE ON ${table}
     FOR EACH ROW
