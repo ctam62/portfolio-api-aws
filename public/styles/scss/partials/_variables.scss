@@ -1,0 +1,49 @@
+@use './fonts.scss';
+
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+:root {
+    --site-padding: 1rem;
+    --letter-width: 0.125rem;
+    --nav-text: 0.875rem;
+    --body-text: 1rem;
+    --section-heading: 1.75rem;
+    --subheading: 1.25rem;
+
+    @media (min-width: $tablet-breakpoint) {
+        --site-padding: 1.5rem;
+        --nav-text: 0.9375rem;
+        --body-text: 1.125rem;
+        --subheading: 1.5rem;
+    }
+}
+
+/* Fonts */
+$body-font-family: 'NunitoSans', Arial, Helvetica, sans-serif;
+$logo-font-family: 'CinzelDecorative', Georgia, Times, serif;
+
+$site-padding: var(--site-padding);
+
+/* Colours */
+$night: #141414;
+$white: #FFFFFF;
+$ash-gray: #ABBEBD;
+$blue-gray: #E5ECEE;
+$platinum: #E9E9E9;
+$robin-egg-blue: #10C9C2;
+$antiflash-white: #EEEFEE;
+$jet: #373737;
+$seasalt: #F8F9F9;
+
+$primary: $robin-egg-blue;
+$primary-text: $night;
+$primary-light-bg: $white;
+$primary-dark-bg: $platinum;
+
+$secondary: $seasalt;
+$secondary-text: $white;
+
+$tertiary: $ash-gray;
+$tertiary-text: $jet;
+$hero-bg: $blue-gray;

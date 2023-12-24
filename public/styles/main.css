@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+address {
+  font-style: inherit;
+}
+
+fieldset,
+button,
+input[type=button] {
+  border: none;
+}
+
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button,
+input[type=button] {
+  background-color: initial;
+  cursor: pointer;
+  border: initial;
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  src: url("/src/assets/fonts/NunitoSans/NunitoSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("/src/assets/fonts/NunitoSans/NunitoSans-Light.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("/src/assets/fonts/NunitoSans/NunitoSans-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("/src/assets/fonts/NunitoSans/NunitoSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("/src/assets/fonts/NunitoSans/NunitoSans-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CinzelDecorative";
+  src: url("/src/assets/fonts/CinzelDecorative/CinzelDecorative-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CinzelDecorative";
+  src: url("/src/assets/fonts/CinzelDecorative/CinzelDecorative-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CinzelDecorative";
+  src: url("/src/assets/fonts/CinzelDecorative/CinzelDecorative-Black.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+:root {
+  --site-padding: 1rem;
+  --letter-width: 0.125rem;
+  --nav-text: 0.875rem;
+  --body-text: 1rem;
+  --section-heading: 1.75rem;
+  --subheading: 1.25rem;
+}
+@media (min-width: 768px) {
+  :root {
+    --site-padding: 1.5rem;
+    --nav-text: 0.9375rem;
+    --body-text: 1.125rem;
+    --subheading: 1.5rem;
+  }
+}
+
+/* Fonts */
+/* Colours */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "NunitoSans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+img {
+  image-rendering: optimizeQuality;
+}
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar {
+  transition: all 1s ease 0s;
+}
+
+.main {
+  padding: 2rem;
+}
+.main__heading {
+  font-size: var(--section-heading);
+  line-height: 1.875rem;
+}
+
+/*# sourceMappingURL=main.css.map */

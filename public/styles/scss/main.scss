@@ -1,0 +1,12 @@
+@use './partials/global.scss';
+@use './partials/mixins' as *;
+@use './partials/variables' as *;
+
+
+.main {
+    padding: 2rem;
+
+    &__heading {
+        @include section-header;
+    }
+}
