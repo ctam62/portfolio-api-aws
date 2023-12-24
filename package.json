@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "node --watch server.js",
+    "dev": "node --watch server.js . & npm run scss",
     "migrate": "npx knex migrate:latest",
     "migrate:down": "npx knex migrate:down",
     "migrate:rollback": "npx knex migrate:rollback",
-    "seed": "npx knex seed:run"
+    "seed": "npx knex seed:run",
+    "scss": "sass --watch public/styles/scss/main.scss public/styles/main.css"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "knex": "^3.1.0",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "sass": "^1.69.5"
   }
 }

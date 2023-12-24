@@ -1,6 +1,7 @@
 require("dotenv").config();
 const cors = require("cors");
 const express = require("express");
+const path = require('path');
 
 const app = express();
 
@@ -8,7 +9,7 @@ const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(cors({ origin: process.env.FRONTEND_URL }));
-app.use(express.static("./public/images/"));
+app.use(express.static("./public/"));
 
 const projectRoutes = require("./routes/project-routes");
 app.use("/api/projects", projectRoutes);
