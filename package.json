@@ -1,0 +1,37 @@
+{
+  "name": "portfolio-api",
+  "version": "1.0.0",
+  "description": "clara tam's portfolio backend api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "migrate": "npx knex migrate:latest",
+    "migrate:down": "npx knex migrate:down",
+    "migrate:rollback": "npx knex migrate:rollback",
+    "seed": "npx knex seed:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctam62/portfolio-api.git"
+  },
+  "keywords": [
+    "api",
+    "portfolio",
+    "postgresql"
+  ],
+  "author": "CLara Tam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctam62/portfolio-api/issues"
+  },
+  "homepage": "https://github.com/ctam62/portfolio-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "knex": "^3.1.0",
+    "pg": "^8.11.3"
+  }
+}
