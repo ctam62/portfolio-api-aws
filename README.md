@@ -2,6 +2,8 @@
 
 This is the backend API of my [Portfolio](https://github.com/ctam62/portfolio).
 
+![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=therealsujitk-vercel-badge)
+
 ## Backend Tech Stack
 - Express.js
 - Node.js
