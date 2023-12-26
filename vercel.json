@@ -7,7 +7,7 @@
     ],
     "headers": [
         {
-            "source": "/api/projects/(.*)",
+            "source": "/(.*)",
             "headers": [
                 {
                     "key": "Access-Control-Allow-Credentials",
