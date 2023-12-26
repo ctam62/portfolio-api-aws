@@ -1,4 +1,10 @@
 {
+    "rewrites": [
+        {
+            "source": "/api/projects/(.*)",
+            "destination": "server.js"
+        }
+    ],
     "routes": [
         {
             "src": "/api/projects/(.*)",
