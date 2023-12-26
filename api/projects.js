@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors({ origin: process.env.FRONTEND_URL }));
 app.use(express.static("./public/"));
 
-const projectRoutes = require("./../routes/project-routes");
+const projectRoutes = require("../routes/projects");
 app.use("/", projectRoutes);
 
 app.listen(PORT, () => {
