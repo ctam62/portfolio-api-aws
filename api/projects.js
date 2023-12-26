@@ -11,7 +11,7 @@ app.use(cors({ origin: process.env.FRONTEND_URL }));
 app.use(express.static("./public/"));
 
 const projectRoutes = require("../routes/projects");
-app.use("/", projectRoutes);
+app.use("/api/projects", projectRoutes);
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
