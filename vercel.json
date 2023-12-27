@@ -2,8 +2,9 @@
     "version": 2,
     "rewrites": [
         {
-            "source": "/(.*)",
-            "destination": "./projects.js"
+            "source": "/[^.]+",
+            "destination": "./projects.js",
+            "status": 200
         }
     ],
     "headers": [
