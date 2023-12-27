@@ -10,8 +10,8 @@
             "destination": "/api/projects.js"
         },
         {
-            "source": "/project/(.*)",
-            "destination": "/project/(.*)"
+            "source": "/project/:title",
+            "destination": "/api/projects/:title"
         }
     ],
     "headers": [
