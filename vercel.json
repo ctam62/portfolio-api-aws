@@ -6,8 +6,8 @@
             "destination": "./projects.js"
         },
         {
-            "source": "https://claratam-portfolio-api.vercel.app/api/projects/:title",
-            "destination": "https://claratam.vercel.app/project/:title"
+            "source": "/project/:title",
+            "destination": "./api/projects/:title"
         }
     ],
     "headers": [
