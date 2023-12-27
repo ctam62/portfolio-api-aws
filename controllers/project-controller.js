@@ -14,7 +14,7 @@ const getAllProjects = async (_req, res) => {
 };
 
 const getProjectByTitle = async (req, res) => {
-    const projectTitle = req.body.title;
+    const projectTitle = req.params.title;
 
     try {
         const project = await knex('project').where('title', projectTitle).first();
