@@ -11,7 +11,7 @@
         },
         {
             "source": "/project/(.*)",
-            "destination": "/"
+            "destination": "/project/(.*)"
         }
     ],
     "headers": [
