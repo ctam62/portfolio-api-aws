@@ -3,8 +3,7 @@
     "rewrites": [
         {
             "source": "/((?!api/.*).*)",
-            "destination": "./projects.js",
-            "status": 200
+            "destination": "./projects.js"
         }
     ],
     "headers": [
