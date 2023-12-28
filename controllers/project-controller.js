@@ -4,7 +4,7 @@ const { handleError, handleNotFound } = require("../utils/errorHandlers");
 
 const getAllProjects = async (_req, res) => {
     try {
-        const projects = await knex('project');
+        const projects = await knex('project').orderBy('id');
         const subset = projects.map(({ id, title, images }) => ({ id, title, images }));
 
         res.status(200).json(subset);

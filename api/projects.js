@@ -8,9 +8,9 @@ const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(cors({ origin: process.env.FRONTEND_URL }));
-app.use(express.static("./public/"));
+app.use(express.static("../public/"));
 
-const projectRoutes = require("./routes/project-routes");
+const projectRoutes = require("../routes/project-routes");
 app.use("/api/projects", projectRoutes);
 
 app.listen(PORT, () => {
