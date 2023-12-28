@@ -7,7 +7,7 @@
         },
         {
             "source": "/project/:title",
-            "destination": "/api/projects/:title"
+            "destination": "https://claratam-portfolio-api.vercel.app/api/projects/SavoryScale"
         }
     ],
     "headers": [
