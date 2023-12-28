@@ -6,12 +6,8 @@
             "destination": "/api/projects.js"
         },
         {
-            "source": "/logos",
-            "destination": "/logos"
-        },
-        {
-            "source": "/images",
-            "destination": "/images"
+            "source": "/favicon.ico",
+            "destination": "/logos/logo.svg"
         }
     ],
     "headers": [
