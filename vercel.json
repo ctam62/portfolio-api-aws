@@ -6,12 +6,6 @@
             "destination": "/api/projects.js"
         }
     ],
-    "redirects": [
-        {
-            "source": "/project/:title",
-            "destination": "/api/projects.js"
-        }
-    ],
     "headers": [
         {
             "source": "/(.*)",
