@@ -6,7 +6,7 @@
             "destination": "/api/projects.js"
         },
         {
-            "source": "/project/:title",
+            "source": "/project/**",
             "destination": "/api/projects.js"
         }
     ],
