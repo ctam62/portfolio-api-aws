@@ -6,8 +6,12 @@
             "destination": "/api/projects.js"
         },
         {
-            "source": "/(.*)",
-            "destination": "/"
+            "source": "/logos",
+            "destination": "/logos"
+        },
+        {
+            "source": "/images",
+            "destination": "/images"
         }
     ],
     "headers": [
