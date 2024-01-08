@@ -30,6 +30,7 @@
     "homepage": "https://github.com/ctam62/portfolio-api#readme",
     "dependencies": {
         "@aws-sdk/client-s3": "^3.485.0",
+        "@aws-sdk/client-secrets-manager": "^3.485.0",
         "@vercel/node": "^3.0.14",
         "@vercel/postgres": "^0.5.1",
         "@vercel/postgres-kysely": "^0.6.0",
@@ -40,6 +41,5 @@
         "kysely": "^0.26.3",
         "pg": "^8.11.3",
         "sass": "^1.69.5"
-    },
-    "type": "module"
+    }
 }
